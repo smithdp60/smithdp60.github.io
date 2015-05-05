@@ -1,0 +1,152 @@
+html,
+body {
+  margin: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background: url("../images/sky.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#header {
+  color: #ffffff;
+  background-color: rgba(0,0,0,.3);
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  padding-bottom: 7px;
+  z-index: 1;
+}
+
+#header a {
+  color: white;
+}
+
+.menu {
+  float: right;
+  margin-right: 50px;
+}
+
+.menu-item {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0px;
+  padding: 18px 10px;
+}
+
+.menu-item:hover {
+  border-bottom: 2px solid white;
+}
+
+.name {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  float: left;
+  margin: 13px 50px;
+  font-size: 1.5em;
+}
+
+#home {
+  height: 100vh;
+  width: 100vw;
+}
+
+#sig {
+  margin: 170px auto;
+  width: 30vw;
+  z-index: -10;
+}
+
+#about {
+  height: 100vh;
+  width: 100vw;
+  text-shadow: 0 0 5px #555555;
+  margin-bottom: 100px;
+}
+
+#about h4 {
+  font-weight: 400;
+}
+
+#headshot {
+  max-width: 18%;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+
+.about-content {
+  width: 46vw;
+  color: white;
+}
+
+#work {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px #555555;
+  padding-top: 100px;
+}
+
+
+
+.semi {
+  display: inline-block;
+  width: 40%;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.semi img {
+  width: 95%;
+  box-shadow: 0 0 10px #333333;
+  border-radius: 10px;
+}
+
+#spacer {
+  height: 80vh;
+}
+
+#contact {
+  /*height: 50vh;*/
+  width: 100vw;
+  color: white;
+}
+
+#contact a {
+  color: white;
+  margin: 0 2px;
+}
+
+#contact a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+
+#headshot2 {
+  max-width: 18%;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+
+
+.button {
+  padding: 25px;
+  background-color: rgba(125,125,125,.6);
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.button:hover {
+  box-shadow: 0 0 15px #333333;
+}
+
