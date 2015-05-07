@@ -67,6 +67,7 @@ body {
 }
 
 #about {
+  background-color: #333333;
   height: 100vh;
   width: 100vw;
   text-shadow: 0 0 5px #555555;
@@ -105,14 +106,21 @@ body {
 
 .semi {
   display: inline-block;
-  width: 40%;
-  margin-top: 30px;
-  padding: 20px;
+  width: 490px;
+  margin: 30px 20px;
+  padding: 0px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,.3)
+}
+
+.semi:hover {
+  box-shadow: 0 0 15px #888888;
 }
 
 .semi img {
-  width: 95%;
-  box-shadow: 0 0 10px #333333;
+  width: 490px;
+  /*box-shadow: 0 0 10px #333333;*/
   border-radius: 10px;
 }
 
