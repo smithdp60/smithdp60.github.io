@@ -1,98 +1,144 @@
 <!DOCTYPE html>
-<html>
-<head class="no-skrollr">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>Daniel Smith | Full-Stack Web Developer</title>
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="js/script.js"></script>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel P. Smith | Web Developer</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/tooltipster.css">
 
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/scrolling-nav.js"></script>
+  <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.tooltipster').tooltipster({
+        contentAsHTML: true
+      });
+    });
+  </script>
 </head>
-<body ng-app="MyApp">
 
-  <div id="skrollr-body">
-
-    <div id="header" data-0p="opacity: .3;" data-20p="opacity:1">
-      <div class="menu">
-        <a href="#home"><div class="menu-item">Home</div></a>
-        <a href="#about"><div class="menu-item">About</div></a>
-        <a href="#work"><div class="menu-item">Work</div></a>
-        <a href="#contact"><div class="menu-item">Contact</div></a>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container" id="header-spacing">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top"><img src="img/dps.png" id="dpssmall"></a>
+        <a class="navbar-brand page-scroll" id="name" href="#page-top">
+          Daniel P. Smith
+        </a>
+        <p class="navbar-text" id="dev">Web Developer</p>
       </div>
-      <div class="name">
-        Daniel Smith <small>&nbsp;| &nbsp;Web Developer</small>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="hidden">
+            <a class="page-scroll" href="#page-top"></a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="page-scroll" href="#page-top">Home</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#about">About</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#work">Work</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <div id="home">
-      <center>
-        <img id="sig" src="images/img2white.png" data-0p="width: 55vw; opacity: .8;" data-20p="width: 55vw; opacity: 0">
-      </center>
+  <section id="intro" class="intro-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <img id="dps" src="img/dps.png">
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div id="about" data-20p="opacity: 0" data-100p="opacity: 1" data-155p="opacity: 0">
-      <center>
-        <img src="images/headshot.jpg" id="headshot">
-        <div class="about-content">
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
           <h1>About Daniel</h1>
+          <img id="headshot" src="img/finalsmall.jpg">
           <h4>
             Hi there, my name's Daniel and I'm a full-stack web developer in Seattle. In a previous life, I was a collegiately-trained musician, where I solved both technical and artistic problems through innovation, creativity, collaboration, and persistent focus. By leveraging those strengths into my passion for technology and design, I'm able to create elegant applications with both substance and flash.
           </h4>
           <h4>
-            I have experience in HTML5, CSS3, JavaScript, jQuery, Node.js, Express.js, Ruby, Ruby on Rails, PostgreSQL, Sequelize, Bcrypt, Git/Github, Heroku, AJAX, and JSON.
+            I have experience in HTML5, CSS3, JavaScript, jQuery, Node.js, Express.js, AngularJS, Ruby, Ruby on Rails, PostgreSQL, Sequelize, Bcrypt, Git/Github, Heroku, AJAX, and JSON.
           </h4>
         </div>
-      </center>
-
-    </div>
-
-
-    <div id="work" data-150p="opacity:0" data-200p="opacity:1" data-300p="opacity:1" data-350p="opacity:0">
-      <h1>Recent Work</h1>
-
-      <div class="semi">
-        <a href="https://semitone.herokuapp.com" target="_blank"><img src="images/semi.jpg"></a>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in velit esse cillum dolore eu fugiat nulla pariatur.</h4>
       </div>
-
-
-      <div class="semi">
-        <a href="https://semitone.herokuapp.com" target="_blank"><img src="images/sofa.jpg"></a>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in velit esse cillum dolore eu fugiat nulla pariatur.</h4>
-      </div>
-
-
-      <div class="semi">
-        <a href="https://semitone.herokuapp.com" target="_blank"><img src="images/beasts.jpg"></a>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in velit esse cillum dolore eu fugiat nulla pariatur.</h4>
-      </div>
-
     </div>
+  </section>
 
-    <div id="spacer">
+  <section id="work" class="work-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <img src="img/work/blank.png" id="macbook">
+          <img src="img/work/aptitune-mac.png" id="aptitune">
+          <img src="img/work/semitone-mac.png" id="semitone">
+          <img src="img/work/sofaspud-mac.png" id="sofaspud">
+          <img src="img/work/todo-mac.png" id="getitdone">
+          <img src="img/work/tictactoe-mac.png" id="tictactoe">
+          <img src="img/work/aptitune-mac.png" id="aptitune2">
+        </div>
+        <div class="col-md-4" id="preview-container">
+
+
+          <a href="http://aptitune.herokuapp.com/" target="_blank">
+            <img src="img/aptitune-thumb.jpg" class="preview tooltipster" id="aptitune-thumb" title="<center>Aptitune is a musical exposure and trivia app,<br>built with Ruby on Rails, jQuery, D3.</center>">
+          </a>
+          <a href="http://semitone.herokuapp.com/" target="_blank">
+            <img src="img/semitone-thumb.jpg" class="preview tooltipster" id="semitone-thumb" title="<center>Semitone is a chord sheet tranposition app.<br>Users can search, tranpose, save, and share their<br>favorites. Built with Node.js, Express.js, bcrypt.</center>">
+          </a>
+          <a href="http://sofaspud.herokuapp.com/" target="_blank">
+            <img src="img/sofaspud-thumb.jpg" class="preview tooltipster" id="sofaspud-thumb" title="This is my link tooltip message!">
+          </a>
+          <a href="http://getitdone.bitballoon.com/" target="_blank">
+            <img src="img/getitdone-thumb.jpg" class="preview tooltipster" id="getitdone-thumb" title="This is my link tooltip message!">
+          </a>
+          <a href="http://tick-tack.bitballoon.com/" target="_blank">
+            <img src="img/tictactoe-thumb.jpg" class="preview tooltipster" id="tictactoe-thumb" title="This is my link tooltip message!">
+          </a>
+          <a href="" target="_blank">
+            <img src="img/aptitune-thumb.jpg" class="preview tooltipster" id="aptitune2-thumb" title="This is my link tooltip message!">
+          </a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div id="contact" data-315p="opacity: 0" data-400p="opacity: 1">
-     <center>
-      <img src="images/headshot.jpg" id="headshot2">
-      <h1>Contact Daniel</h1>
-
-      <a href="https://github.com/smithdp60" target="_blank"><i class="fa fa-git-square fa-2x"></i></a>&nbsp;
-      <a href="https://www.linkedin.com/in/danielpsmith4" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>&nbsp;
-      <a href="mailto:daniel@danielpsmith.com"><i class="fa fa-envelope-square fa-2x"></i></a>
-
-    </center>
-  </div>
-
-</div>
-
-<script type="text/javascript" src="js/skrollr.min.js"></script>
-<script type="text/javascript">
-  var s = skrollr.init(smoothScrolling=true);
-</script>
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Contact Daniel</h1>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
