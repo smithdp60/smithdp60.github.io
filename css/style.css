@@ -70,11 +70,10 @@ of those sections to manage the look and feel of the site. */
 
 
 .about-section {
-
     height: 100%;
     padding-top: 90px;
     text-align: center;
-    background: #666666;
+    background: #ffffff;
     text-align: center;
     color: #333333;
     font-family: 'Muli', sans-serif;
