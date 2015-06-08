@@ -4457,18 +4457,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 /*MODIFY*/
 .navbar-default .navbar-toggle {
-  border-color: blue;
+  border-color: rgba(50,50,50,1);
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: red;
+  background-color: #69764E;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: green;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: yellow;
+  border-color: rgba(50,50,50,.9);
 }
 /*//*/
 

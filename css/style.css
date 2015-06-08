@@ -15,7 +15,7 @@ html {
     height: 100%;
 }
 
-@media(min-width:767px) {
+/*@media(min-width:767px) {*/
     .navbar {
         padding: 3px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -30,7 +30,7 @@ html {
         background: linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9));
         text-shadow: none;
     }
-}
+    /*}*/
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
@@ -58,7 +58,7 @@ of those sections to manage the look and feel of the site. */
     padding-top: 85px;
     text-align: center;
     background: #ffffff;
-    background-image: url("../img/sunset.jpg");
+    background-image: url("../img/wood.jpg");
     background-position: top;
     background-size: cover;
 }
@@ -72,8 +72,8 @@ of those sections to manage the look and feel of the site. */
 .work-section {
     min-height: 100vh;
     padding-top: 160px;
-    background: #ffffff;
     font-family: 'Muli', sans-serif;
+    background: #ffffff;
 }
 
 #macbook {
@@ -94,47 +94,58 @@ of those sections to manage the look and feel of the site. */
 }
 
 .preview {
-    width: 37%;
+    max-width: 37%;
+    max-height: 25vh;
     border: 3px solid #000000;
     margin-bottom: 5px;
 }
 
-
-.slant {
-    position: absolute;
-    background-color: #656565;
-    left: -50px;
-    margin-top: -50px;
-    min-height: 60vh;
-    width: 120vw;
-    -ms-transform: rotate(4deg);
-    -webkit-transform: rotate(4deg);
-    transform: rotate(4deg);
+.about-container {
+    height: 100vh;
+    padding-top: 132px;
 }
 
+.unslant {
+    margin-left: 50px;
+    padding-top: 146px;
+    padding-bottom: 162px;
+    max-width: 100vw;
+    min-height: 50vh;
+    -ms-transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+}
 
 .about-section {
-    min-height: 100vh;
-    padding-top: 200px;
-    background: #ffffff;
-    text-align: justify;
+    width: 140vw;
+    margin-left: -50px;
+    min-height: 50vh;
+    background-color: #69764E;
     color: #ffffff;
     font-family: 'Muli', sans-serif;
+    -ms-transform: skewY(4deg);
+    -webkit-transform: skewY(4deg);
+    transform: skewY(4deg);
 }
 
 .about-section h4 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: normal;
     font-family: 'Muli', sans-serif;
 }
 
-.headshot {
+.headshot-container {
+    background-color: white;
     width: 100%;
-    max-width: 50vw;
-    opacity: 1;
-    opacity: .8;
+    max-width: 35vw;
 }
 
+.headshot {
+    width: 100%;
+    max-width: 35vw;
+    opacity: 1;
+    border: 3px solid #000000;
+}
 
 .contact-section {
     height: 100vh;
@@ -144,3 +155,16 @@ of those sections to manage the look and feel of the site. */
     font-family: 'Muli', sans-serif;
 }
 
+
+@media (max-width: 992px) {
+    #aptitune, #semitone, #sofaspud, #getitdone, #tictactoe, #mozaiq, #macbook {
+        visibility: hidden;
+    }
+
+    .unslant {
+        padding-top: 46px;
+        padding-bottom: 62px;
+    }
+
+
+}
