@@ -102,7 +102,7 @@ of those sections to manage the look and feel of the site. */
 
 .slant {
     position: absolute;
-    background-color: #bbbbbb;
+    background-color: #656565;
     left: -50px;
     margin-top: -50px;
     min-height: 60vh;
@@ -132,6 +132,7 @@ of those sections to manage the look and feel of the site. */
     width: 100%;
     max-width: 50vw;
     opacity: 1;
+    opacity: .8;
 }
 
 
