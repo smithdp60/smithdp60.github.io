@@ -24,7 +24,7 @@ $(function() {
     $("#getitdone").hide();
     $("#tictactoe").hide();
     $("#aptitune").hide();
-    $("#aptitune2").hide();
+    $("#mozaiq").hide();
 
     //work section – on hover
     $("#aptitune-thumb").mouseenter(function() {
@@ -57,10 +57,10 @@ $(function() {
         $("#tictactoe").fadeOut("fast");
     })
 
-    $("#aptitune2-thumb").mouseenter(function() {
-        $("#aptitune2").fadeIn("fast");
+    $("#mozaiq-thumb").mouseenter(function() {
+        $("#mozaiq").fadeIn("fast");
     }).mouseleave(function() {
-        $("#aptitune2").fadeOut("fast");
+        $("#mozaiq").fadeOut("fast");
     })
 
 

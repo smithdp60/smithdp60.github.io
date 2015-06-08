@@ -4400,10 +4400,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 /*MODIFY*/
 .navbar-default {
-  background: -webkit-linear-gradient(rgba(2,35,56,.9), rgba(2,35,56,0));
-  background: -o-linear-gradient(rgba(2,35,56,.9), rgba(2,35,56,0));
-  background: -moz-linear-gradient(rgba(2,35,56,.9), rgba(2,35,56,0));
-  background: linear-gradient(rgba(2,35,56,.9), rgba(2,35,56,0));
+  background: -webkit-linear-gradient(rgba(20,20,20,.9), rgba(20,20,20,0));
+  background: -o-linear-gradient(rgba(20,20,20,.9), rgba(20,20,20,0));
+  background: -moz-linear-gradient(rgba(20,20,20,.9), rgba(20,20,20,0));
+  background: linear-gradient(rgba(20,20,20,.9), rgba(20,20,20,0));
   border: none;
   opacity: .95;
 }
