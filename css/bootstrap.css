@@ -4457,7 +4457,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 /*MODIFY*/
 .navbar-default .navbar-toggle {
-  border-color: rgba(50,50,50,1);
+  border-color: rgba(255,255,255,1);
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {

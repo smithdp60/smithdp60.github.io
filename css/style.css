@@ -1,10 +1,4 @@
-/*!
- * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
- body {
+body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -15,26 +9,21 @@ html {
     height: 100%;
 }
 
-/*@media(min-width:767px) {*/
-    .navbar {
-        padding: 3px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-    .top-nav-collapse {
-        padding: 10px 0;
-        background: -webkit-linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9));
-        background: -o-linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9));
-        background: -moz-linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9));
-        background: linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9));
-        text-shadow: none;
-    }
-    /*}*/
+.navbar {
+    padding: 3px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+.top-nav-collapse {
+    padding: 10px 0;
+    background: -webkit-linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9));
+    background: -o-linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9));
+    background: -moz-linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9));
+    background: linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9));
+    text-shadow: none;
+}
 
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
-of those sections to manage the look and feel of the site. */
 
 
 #dpssmall {
@@ -100,12 +89,14 @@ of those sections to manage the look and feel of the site. */
     margin-bottom: 5px;
 }
 
+
+
 .about-container {
     height: 100vh;
     padding-top: 132px;
 }
 
-.unslant {
+.aboutunslant {
     margin-left: 50px;
     padding-top: 146px;
     padding-bottom: 162px;
@@ -120,7 +111,7 @@ of those sections to manage the look and feel of the site. */
     width: 140vw;
     margin-left: -50px;
     min-height: 50vh;
-    background-color: #69764E;
+    background-color: #6A764F;
     color: #ffffff;
     font-family: 'Muli', sans-serif;
     -ms-transform: skewY(4deg);
@@ -147,12 +138,28 @@ of those sections to manage the look and feel of the site. */
     border: 3px solid #000000;
 }
 
-.contact-section {
-    height: 100vh;
-    padding-top: 10px;
-    text-align: center;
-    background: #ffffff;
-    font-family: 'Muli', sans-serif;
+
+
+
+
+footer {
+    height: 80px;
+    margin-top: 25px;
+    margin-bottom: 65px;
+    /*border: 1px solid red;*/
+}
+
+footer p {
+    margin: 0;
+    font-size: 5em;
+}
+
+footer a {
+    color:rgba(50,50,50,.9);
+}
+
+footer a:hover, footer a:active {
+    color: #6A764F;
 }
 
 
@@ -160,11 +167,22 @@ of those sections to manage the look and feel of the site. */
     #aptitune, #semitone, #sofaspud, #getitdone, #tictactoe, #mozaiq, #macbook {
         visibility: hidden;
     }
-
-    .unslant {
+    .aboutunslant {
         padding-top: 46px;
         padding-bottom: 62px;
     }
+    .work-section {
+        padding-top: 70px;
+    }
 
-
+    .about-container {
+        padding-top: 60px;
+    }
+    footer {
+        height: 90px;
+    }
+    footer p {
+        margin: 0;
+        font-size: 5em;
+    }
 }
