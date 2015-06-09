@@ -111,7 +111,7 @@ html {
     width: 140vw;
     margin-left: -50px;
     min-height: 50vh;
-    background-color: #6A764F;
+    background-color: #6D7E4A;
     color: #ffffff;
     font-family: 'Muli', sans-serif;
     -ms-transform: skewY(4deg);
@@ -159,7 +159,7 @@ footer a {
 }
 
 footer a:hover, footer a:active {
-    color: #6A764F;
+    color: #6D7E4A;
 }
 
 
