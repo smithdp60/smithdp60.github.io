@@ -177,6 +177,10 @@ footer a:hover, footer a:active {
 
 
 @media (max-width: 992px) {
+    .navbar-brand {
+        padding: 15px 15px 15px 0px;
+    }
+
     #aptitune, #semitone, #sofaspud, #getitdone, #tictactoe, #mozaiq, #macbook {
         visibility: hidden;
     }
