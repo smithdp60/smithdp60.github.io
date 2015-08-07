@@ -180,6 +180,9 @@ footer a:hover, footer a:active {
     .navbar-brand {
         padding: 15px 15px 15px 0px;
     }
+    #name {
+        font-size: 1.25em;
+    }
 
     #aptitune, #semitone, #sofaspud, #getitdone, #tictactoe, #mozaiq, #macbook {
         visibility: hidden;
