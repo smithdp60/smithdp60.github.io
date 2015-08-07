@@ -68,7 +68,7 @@ $(function() {
 
 
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 600) {
+    if ($(".navbar").offset().top > 600 && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         $("#name").addClass("hide-brand").hide();
         $("#dev").addClass("hide-brand").hide();
