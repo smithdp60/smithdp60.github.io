@@ -115,7 +115,8 @@ html {
     width: 120vw;
     margin-left: -50px;
     min-height: 50vh;
-    background-color: #4e6e38;
+    /*background-color: #4e6e38;*/
+    background-color: #444444;
     color: #ffffff;
     font-family: 'Muli', sans-serif;
     -ms-transform: skewY(4deg);
@@ -142,6 +143,16 @@ html {
     border: 3px solid #000000;
 }
 
+.icon {
+  display: inline-block;
+  background-color: #efefef;
+  border-radius: 1em;
+  max-height: 100px;
+  max-width: 250px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0 0 10px #bbbbbb inset;
+}
 
 
 

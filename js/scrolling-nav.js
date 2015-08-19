@@ -17,8 +17,6 @@ $(function() {
     });
 
 
-
-
     $("#semitone").hide();
     $("#sofaspud").hide();
     $("#getitdone").hide();
@@ -95,6 +93,7 @@ $(window).scroll(function() {
                 $(window).data('scrollTimeout', setTimeout(callback,1300,self));
             });
         };
+
         $(window).scrollStopped(function(){
             $('#dpssmall').css({
                 '-webkit-transition' : '.4s ease-in-out',
