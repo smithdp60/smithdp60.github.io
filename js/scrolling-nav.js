@@ -1,7 +1,5 @@
 $(window).load(function() {
-    $('#loading').fadeOut("slow").remove();
-
-
+    $('#loading').remove();
 
     $(function() {
         $('a.page-scroll').bind('click', function(event) {
@@ -11,16 +9,15 @@ $(window).load(function() {
             }, 1500, 'easeInOutExpo');
             event.preventDefault();
         });
-        $("#intro").hide().fadeIn(2000);
+
         $("#dpssmall").hide();
-        $('.navbar').hide().delay(500).fadeIn(2000);
-        $('#dps').hide().delay(500).fadeIn(2000);
+
+        $("#intro").hide().fadeIn(1000);
 
         $('#dpssmall').css({
             '-webkit-transform': 'rotate(0deg)',
             'transform': 'rotate(0deg)'
         });
-
 
         $("#semitone").hide();
         $("#sofaspud").hide();
@@ -29,43 +26,15 @@ $(window).load(function() {
         $("#aptitune").hide();
         $("#mozaiq").hide();
 
-        //work section – on hover
-        $("#aptitune-thumb").mouseenter(function() {
-            $("#aptitune").fadeIn("fast");
-        }).mouseleave(function() {
-            $("#aptitune").fadeOut("fast");
-        })
-
-        $("#semitone-thumb").mouseenter(function() {
-            $("#semitone").fadeIn("fast");
-        }).mouseleave(function() {
-            $("#semitone").fadeOut("fast");
-        })
-
-        $("#sofaspud-thumb").mouseenter(function() {
-            $("#sofaspud").fadeIn("fast");
-        }).mouseleave(function() {
-            $("#sofaspud").fadeOut("fast");
-        })
-
-        $("#getitdone-thumb").mouseenter(function() {
-            $("#getitdone").fadeIn("fast");
-        }).mouseleave(function() {
-            $("#getitdone").fadeOut("fast");
-        })
-
-        $("#tictactoe-thumb").mouseenter(function() {
-            $("#tictactoe").fadeIn("fast");
-        }).mouseleave(function() {
-            $("#tictactoe").fadeOut("fast");
-        })
-
-        $("#mozaiq-thumb").mouseenter(function() {
-            $("#mozaiq").fadeIn("fast");
-        }).mouseleave(function() {
-            $("#mozaiq").fadeOut("fast");
-        })
-
+        // hover logic for thumbnails and full-size
+        var apps = ["aptitune", "semitone", "sofaspud", "getitdone", "tictactoe", "mozaiq"];
+        apps.forEach(function(app) {
+            $("#" + app + "-thumb").mouseenter(function() {
+                $("#" + app).fadeIn("fast");
+            }).mouseleave(function() {
+                $("#" + app).fadeOut("fast");
+            });
+        });
 
     });
 
