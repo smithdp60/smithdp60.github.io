@@ -40,7 +40,7 @@ $(window).load(function() {
 
 
     $(window).scroll(function() {
-        if ($(".navbar").offset().top > 600 && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if ($(".navbar").offset().top > ($(window).height() - 50) && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             $(".navbar-fixed-top").addClass("top-nav-collapse");
             $("#name").addClass("hide-brand").hide();
             $("#dev").addClass("hide-brand").hide();
@@ -95,7 +95,7 @@ $(window).load(function() {
                 });
             });
 
-        } else if ($(".navbar").offset().top < 600) {
+        } else if ($(".navbar").offset().top < ($(window).height() - 50)) {
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
             $("#dpssmall").hide();
             $("#name").removeClass("hide-brand").fadeIn(1000);
