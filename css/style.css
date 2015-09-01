@@ -93,12 +93,16 @@ html {
 
 .intro-section {
     height: 100vh;
-    padding-top: 85px;
+    /*padding-top: 85px;*/
     text-align: center;
     background: #ffffff;
     background-image: url("../img/wood.jpg");
     background-position: top;
     background-size: cover;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 #dps {
