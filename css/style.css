@@ -2,7 +2,6 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-
 }
 
 html {
@@ -61,12 +60,6 @@ html {
   }
 }
 
-
-
-
-
-
-
 .navbar {
     padding: 3px 0;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -81,8 +74,6 @@ html {
     background: linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9));
     text-shadow: none;
 }
-
-
 
 #dpssmall {
     width: 55px;
@@ -147,8 +138,6 @@ html {
     margin-bottom: 5px;
 }
 
-
-
 .about-container {
     height: 120vh;
     padding-top: 123px;
@@ -210,9 +199,6 @@ html {
   box-shadow: 0 0 10px #bbbbbb inset;
 }
 
-
-
-
 footer {
     height: 80px;
     margin-top: -105px;
@@ -250,7 +236,6 @@ footer a:hover, footer a:active {
     }
 }
 
-
 @media (max-width: 768px) {
 
     #loading-icon {
@@ -263,18 +248,20 @@ footer a:hover, footer a:active {
         background: -moz-linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9));
         background: linear-gradient(rgba(50,50,50,.9), rgba(50,50,50,.9));
     }
+
     .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
         border-bottom: none;
     }
+
     .navbar-brand {
         padding: 15px 10px 15px 2px;
     }
+
     #name {
         font-size: 1.25em;
     }
 
     .work-section {
-
         min-height: 50vh;
     }
 
@@ -293,14 +280,11 @@ footer a:hover, footer a:active {
 
     }
     .about-section {
-        background-color: #4e6e38;
         color: #ffffff;
-        font-family: 'Muli', sans-serif;
         -ms-transform: initial;
         -webkit-transform: initial;
         transform: initial;
     }
-
 
     .work-section {
         padding-top: 70px;
@@ -313,6 +297,7 @@ footer a:hover, footer a:active {
     }
     .headshot, .headshot-container {
         border-radius: 50%;
+        margin: 0 auto;
     }
 
     footer {

@@ -11,33 +11,24 @@ $(window).load(function() {
         });
 
         $("#dpssmall").hide();
-
         $("#intro").hide().fadeIn(1000);
-
         $('#dpssmall').css({
             '-webkit-transform': 'rotate(0deg)',
             'transform': 'rotate(0deg)'
         });
 
-        $("#semitone").hide();
-        $("#sofaspud").hide();
-        $("#getitdone").hide();
-        $("#tictactoe").hide();
-        $("#aptitune").hide();
-        $("#mozaiq").hide();
-
         // hover logic for thumbnails and full-size
-        var apps = ["aptitune", "semitone", "sofaspud", "getitdone", "tictactoe", "mozaiq"];
+        var apps = ["#aptitune", "#semitone", "#sofaspud", "#getitdone", "#tictactoe", "#mozaiq"];
         apps.forEach(function(app) {
-            $("#" + app + "-thumb").mouseenter(function() {
-                $("#" + app).fadeIn("fast");
+            $(app).hide();
+            $(app + "-thumb").mouseenter(function() {
+                $(app).fadeIn("fast");
             }).mouseleave(function() {
-                $("#" + app).fadeOut("fast");
+                $(app).fadeOut("fast");
             });
         });
 
     });
-
 
     $(window).scroll(function() {
         if ($(".navbar").offset().top > ($(window).height() - 50) && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -76,7 +67,6 @@ $(window).load(function() {
                     'transform': 'rotate(0deg)'
                 });
             });
-
 
             //logo back to normal on hover
             $('#dpssmall').hover(function() {
